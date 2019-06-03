@@ -1,3 +1,5 @@
+package ch03.stale;
+
 public class Constants2 {
     public static final double CM_PER_INCH = 2.54;
 
