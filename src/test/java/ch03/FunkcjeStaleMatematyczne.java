@@ -14,11 +14,13 @@ public class FunkcjeStaleMatematyczne {
         System.out.println("Pow: "+dp);
         System.out.println("Liczba PI: "+PI); //nie ma przedrostka Math. poniewaz jest import statyczny
         System.out.println("Liczba Eulera: "+Math.E);
-        System.out.println("Long max value"+l);
+        System.out.println("Long max value: "+l);
 
         //konwersja wartosci logicznej na wartosc liczbowa
         boolean b = false;
         int wynik = b ? 1 : 0;
         System.out.println(wynik);
+
+
     }
 }
