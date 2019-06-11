@@ -3,7 +3,7 @@ package ch03;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class BigIntegerTest {
+public class LotteryOdsBigIntegerTest {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Ile liczb ma być wylosowanych? ");

@@ -1,6 +1,8 @@
 package ch03;
 
-public class CompoundIntrest {
+import java.util.Arrays;
+
+public class TabliceCompoundIntrest {
     public static void main(String[] args) {
         final double STARTDATE = 10;
         final int NRATES = 6;
@@ -17,6 +19,8 @@ public class CompoundIntrest {
         for (int j = 0; j < balances[0].length; j++) {
             balances[0][j] = 10000;
         }
+        System.out.println("tu--");
+        System.out.println(Arrays.deepToString(balances));
 
         //Obliczenie odsetek dla przyszlych lat
         for (int i = 1; i < balances.length; i++) {
@@ -46,7 +50,7 @@ public class CompoundIntrest {
             System.out.println();
         }
         for (int i = 0; i < interestRate.length; i++) {
-            System.out.print("   ------ ");
+            System.out.print("----------");
         }
         System.out.println();
         for (int j = 0; j < interestRate.length; j++) {
