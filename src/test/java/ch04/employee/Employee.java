@@ -13,12 +13,11 @@ public class Employee {
 
     //konstruktor
     public Employee(String n, double s, int year, int month, int day) {
-        this.name = n;
+        name = n;
         salary = s;
         oldSalary = salary;
         GregorianCalendar calendar = new GregorianCalendar(year, month - 1, day);
         hireDay = calendar.getTime();
-        //nextID++;
     }
 
 
