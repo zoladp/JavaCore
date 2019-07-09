@@ -18,7 +18,8 @@ public class FunkcjeStaleMatematyczne {
 
         //konwersja wartosci logicznej na wartosc liczbowa
         boolean b = false;
-        int wynik = b ? 1 : 0;
+//        int wynik = b ? 1 : 0;
+        int wynik = (PI>E) ? 1 : 0;
         System.out.println(wynik);
 
 

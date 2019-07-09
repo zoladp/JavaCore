@@ -8,11 +8,14 @@ public class BreakZEtykieta {
         int n;
         etykieta:
         for (int i = 0; i <= 10; i++) {
+            System.out.print("Petla: "+i+" -> ");
             for (int j = 0; j <= 5; j++) {
                 if(i==8) break etykieta;
-                else if(i>6) continue;
-                System.out.println("petla razy i:"+i+" j:"+j);
+//                else if(i>6) continue;
+//                System.out.print("petla razy i:"+i+" j:"+j+" | ");
+                System.out.print(" j:"+j+" | ");
             }
+            System.out.println();
         }
 
     }
