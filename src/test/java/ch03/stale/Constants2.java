@@ -15,8 +15,8 @@ public class Constants2 {
         x += 4;
         x++;
         x = 2 * ++x + 5;
-        System.out.println(x);
-        String v = x != 0 ? "heja" : "uuu"; //warunek ? wyrazenie1 : wyrazenie2;
+         System.out.println(x);
+        final String v = x != 0 ? "heja" : "uuu"; //warunek ? wyrazenie1 : wyrazenie2;
         System.out.println(v);
 
         double z = 4.49990;
@@ -37,7 +37,7 @@ public class Constants2 {
         Rozmiar s = Rozmiar.ŚREDNI;
         System.out.println("enum: "+s);
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
 
             System.out.println("Java\u2122");
         }
