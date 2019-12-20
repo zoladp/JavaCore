@@ -1,9 +1,10 @@
 package ch03.stale;
 
 public class Constants2 {
-    public static final double CM_PER_INCH = 2.54;
+    public static final double CM_PER_INCH = 2.54; //stala klasowa
 
     enum Rozmiar {MAŁY, ŚREDNI, DUŻY, EKSTRA_DUŻY}
+
     public static void main(String[] args) {
         double paperWidth = 8.5;
         double paperHeight = 11;
@@ -15,7 +16,7 @@ public class Constants2 {
         x += 4;
         x++;
         x = 2 * ++x + 5;
-         System.out.println(x);
+        System.out.println(x);
         final String v = x != 0 ? "heja" : "uuu"; //warunek ? wyrazenie1 : wyrazenie2;
         System.out.println(v);
 
@@ -35,14 +36,16 @@ public class Constants2 {
 
 
         Rozmiar s = Rozmiar.ŚREDNI;
-        System.out.println("enum: "+s);
+        System.out.println("enum: " + s);
 
         for (int i = 0; i < 10; i++) {
 
             System.out.println("Java\u2122");
         }
 
-        System.out.println("a tangens: "+Math.atan2(3,4));
+        System.out.println("a tangens: " + Math.atan2(3, 4));
 
     }
 }
+
+

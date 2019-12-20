@@ -1,7 +1,8 @@
 package ch03;
 
-public class typWyliczeniowy {
+public class TypWyliczeniowy {
     enum Rozmiar {MAŁY, ŚREDNI, DUŻY}
+    enum PizzaSize {Small,Medium,Large,XtraLarge,SuperXtraLarge}
 
     Rozmiar s = Rozmiar.ŚREDNI;
     Rozmiar n = null;
@@ -12,5 +13,10 @@ public class typWyliczeniowy {
 
         System.out.println(d);
         System.out.println(m);
+
+        PizzaSize ps = PizzaSize.SuperXtraLarge;
+        String info = ps.getClass().toString();
+        System.out.println(info);
+        System.out.println(ps+"\u2122");
     }
 }
