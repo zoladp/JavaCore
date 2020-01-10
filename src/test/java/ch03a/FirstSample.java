@@ -42,5 +42,23 @@ public class FirstSample {
         String subs = greeting.substring(5);
         System.out.println(subs);
 
+        String lorem = "loremIpsumSinDolor Et";
+        String sublorem = lorem.substring(10,11);
+        System.out.println(sublorem);
+
+        //String.join - ciekawa metoda laczenia stringow rozdzielonych jakims znakiem
+        String all = String.join("/","Hej", s.toString(),subs,lorem,sublorem);
+        System.out.println(all);
+
+        //podmiana trzech ostatnich znakow w lancuchu
+        System.out.println(greeting);
+        greeting = "Witam "+greeting.substring(5);
+        System.out.println(greeting);
+        greeting = greeting.substring(0,6)+"Rodakow";
+        System.out.println(greeting);
+
+
+
+
     }
 }

@@ -4,14 +4,26 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class LotteryDrawing {
+
+    public static void ltreryOds(int k, int n) {
+        int lotteryOds = 1;
+        for (int i = 1; i <= k; i++) {
+            lotteryOds = (lotteryOds * (n + 1 - i)) / i;
+        }
+        System.out.printf("Twoje szanse to 1 do (%,d). Powodzenia!\n\n", lotteryOds);
+    }
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Ile liczb musisz wylosować? ");
-        int k = in.nextInt();
+            System.out.println("Ile liczb musisz wylosować? ");
+            int k = in.nextInt();
 
-        System.out.println("Jaka jest najwieksza liczba? ");
-        int n = in.nextInt();
+            System.out.println("Jaka jest najwieksza liczba? ");
+            int n = in.nextInt();
+//        int k = 5;
+//        int n = 42;
+        ltreryOds(k,n);
 
         //1.Zapelnienie tablicy liczbami
         int[] numbers = new int[n];
@@ -34,5 +46,7 @@ public class LotteryDrawing {
         Arrays.sort(result);
         System.out.println("Postaw na następujące liczby. Dzięki nim zdobędziesz bogactwo!");
         for (int r : result) System.out.println(r);
+
     }
+
 }
