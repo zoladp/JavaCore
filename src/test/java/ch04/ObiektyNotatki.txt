@@ -1,0 +1,18 @@
+3 cechy obiektow
+    Zachowanie - co mozna zrobic z obiektem i jakie metody wywolac na jego rzecz
+    Stan - jak obiekt reaguje w odpowiedzi na wywolywane na jego rzecz metody
+        zmiana stanu musi byc spowod. wywolaniem metod
+    Tożsamość - jak odroznic obiekt od innych obiektow ktore moga miec te same Zachowania i Stan
+
+Relacje miedzy klasami
+    zaleznosc(używa)
+    agregacja(zawiera)
+    dziedziczenie(jest)
+
+    Accessor - metody ktore daja dostep do pol egzemplarza (przedrostek get)
+    Date time = calendar.getTime();
+    Mutator - metody ktore modyfikuja pola egzemplarza (przedrostek set)
+    calendar.setTime(time);
+
+
+
