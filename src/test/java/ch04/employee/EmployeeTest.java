@@ -6,7 +6,7 @@ public class EmployeeTest {
         Employee[] staff = new Employee[3];
 
         staff[0] = new Employee("Jarosław Rybiński",75000,1987, 12,15);
-        staff[1] = new Employee("Katarzyna Remiszewska", 6000, 1989, 10, 1);
+        staff[1] = new Employee("Kasia Remiszewska", 6000, 1989, 10, 1);
         staff[2] = new Employee("Krystyna Kuczyńska", 40000, 1990, 3, 15);
 
         Employee worker = new Employee("James Bond",100000,1950,1,1);
@@ -21,9 +21,14 @@ public class EmployeeTest {
             e.raiseSalary(5);
 
         for (Employee e : staff)
-            System.out.println("name="+e.getName() + "\t\t\tsalary="+e.getSalary()+"\tpodwyzka="+(e.getSalary()-e.getOldSalary())+"\t\tthireDay="+e.getHireDay()+"\tnextID:"+e.getNextID());
+//            System.out.println("name="+e.getName() + "\t\t\tsalary="+e.getSalary()+"\tpodwyzka="+(e.getSalary()-e.getOldSalary())+"\t\tthireDay="+e.getHireDay()+"\tnextID:"+e.getNextID());
+            System.out.println("name="+e.getName() + "\t\t\tsalary="+e.getSalary()+"\tpodwyzka="+(e.getSalary()-e.getOldSalary())+"\t\tthireDay="+e.getHireDay()+"\tID: "+e.getId());
 
         System.out.println(Math.PI);
+
+        double d = Math.PI;
+        double a = Math.pow(45,d);
+        System.out.println(a);
 
     }
 }

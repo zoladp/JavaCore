@@ -7,9 +7,10 @@ public class Employee {
     //pola
     private final String name;
     private double salary;
-    private double oldSalary;
-    private Date hireDay;
-    private static int nextID = 1;
+    private final double oldSalary;
+    private final Date hireDay;
+    private static int nextID;
+    private final int id;
 
     //konstruktor
     public Employee(String n, double s, int year, int month, int day) {
@@ -18,6 +19,8 @@ public class Employee {
         oldSalary = salary;
         GregorianCalendar calendar = new GregorianCalendar(year, month - 1, day);
         hireDay = calendar.getTime();
+//        id = nextID++;
+        id = ++nextID; //nextID++;
     }
 
 
@@ -37,11 +40,12 @@ public class Employee {
 
     public static int getNextID() { return nextID++; }
 
+    public int getId() { return id;}
+
     public void raiseSalary(int byPercent) {
         double raise = this.salary * byPercent / 100;
         salary += raise;
     }
-
 
     //kolejne metody
 
