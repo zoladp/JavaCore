@@ -54,3 +54,4 @@ public class CalendarTest {
         if(weekday != firstDayOfWeek) System.out.println();
     }
 }
+
