@@ -1,5 +1,6 @@
 package ch04a;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -23,7 +24,8 @@ public class EmployeeTest {
 //                    " + ("+e.getPercent()+"%)"+e.getRaise() +
 //                    "\tafter= " + e.getSalary() +
 //                    "\thireday=" + e.getHireDay());
-            System.out.printf("name= %s\tsalary+raise= %.2f+(%.2f%%)=%.2f  after= %.2f  hireday= %6$tF %6$tr, dzien w roku: %6$tj\n",e.getName(),(e.getSalary()-e.getRaise()),e.getPercent(),e.getRaise(),e.getSalary(),e.getHireDay());
+//            System.out.printf("name= %s\tsalary+raise= %.2f+(%.2f%%)=%.2f  after= %.2f  hireday= %6$tF %6$tr, dzien w roku: %6$tj\n",e.getName(),(e.getSalary()-e.getRaise()),e.getPercent(),e.getRaise(),e.getSalary(),e.getHireDay());
+            System.out.printf("name= %s\tsalary+raise= %.2f+(%.2f%%)=%.2f  after= %.2f  hireday= %6$tF %6$tB %6$tB\n",e.getName(),(e.getSalary()-e.getRaise()),e.getPercent(),e.getRaise(),e.getSalary(),e.getHireDay());
         }
     }
 }
@@ -33,13 +35,15 @@ class Employee {
     private double salary;
     private double raise;
     private double percent;
-    private Date hireDay;
+//    private Date hireDay;
+    private LocalDate hireDay;
 
     public Employee(String n, double s, int year, int month, int day) {
         name = n;
         salary = s;
-        GregorianCalendar calendar = new GregorianCalendar(year, month, day);
-        hireDay = calendar.getTime();
+//        GregorianCalendar calendar = new GregorianCalendar(year, month, day);
+//        hireDay = calendar.getTime();
+        hireDay = LocalDate.of(year,month,day);
     }
 
     public String getName() {
@@ -50,9 +54,10 @@ class Employee {
         return salary;
     }
 
-    public Date getHireDay() {
-        return hireDay;
-    }
+//    public Date getHireDay() {
+//        return hireDay;
+//    }
+    public LocalDate getHireDay() { return hireDay; }
 
     public double getRaise() {
         return raise;
