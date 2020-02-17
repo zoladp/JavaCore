@@ -13,7 +13,7 @@ public class EmployeeTest {
 
         //zwiekszenie pensji wszystkim pracownikom o 5%
         for (Employee e : staff) {
-            e.raiseSalary(5.61);
+            e.raiseSalary(12.52);
         }
 
         for (Employee e : staff)
